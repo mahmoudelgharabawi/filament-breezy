@@ -53,7 +53,7 @@ class PersonalInfo extends MyProfileComponent
             return [
                 Forms\Components\Group::make([
                     $name,
-                    $email
+                    // $email
                 ])->columnSpan(3)
             ];
         }
