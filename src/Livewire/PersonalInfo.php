@@ -15,7 +15,7 @@ class PersonalInfo extends MyProfileComponent
     public $user;
     public $userClass;
     public bool $hasAvatars;
-    public array $only = ['name','email'];
+    public array $only = ['name'];
 
     public static $sort = 10;
 
@@ -46,7 +46,7 @@ class PersonalInfo extends MyProfileComponent
                 filament('filament-breezy')->getAvatarUploadComponent(),
                 Forms\Components\Group::make([
                     $name,
-                    $email
+                    // $email
                 ])->columnSpan(2),
             ];
         } else {
